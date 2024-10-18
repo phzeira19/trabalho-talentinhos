@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Aplicativo de Feedback</title>
+    <!-- Chamando o CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Chamando o JavaScript-->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- Tela 1: Introdução -->
+    <div id="tela1" class="tela">
+        <h1>Bem-vindo ao Prêmio Talentinho Front-end!</h1>
+        <h2><h1 class="fonte"> Equipe:</h1><i>União de Talentos</i></h2>
+        <h3><h1 class="fonte">Membros:</h1><i>Raphaela, Henrique, Amanda, Mellany e Saymon</i></h3>
+        <h4>Tema da Aplicação:<h2 class="verde">Desmatamento</h2> </h4>
+        <button id="btn-ir-tela2">Ir para a próxima tela</button>
+    </div>
+
+    <!-- Tela 2: Conteúdo Texto -->
+    <div id="tela2" class="tela" style="display: none;">
+        <h2 class="fonte">Desmatamento</h2>
+        <p>O desmatamento é um desafio significativo com impactos ambientais e sociais, exigindo ações integradas para sua mitigação. Se precisar de mais detalhes ou quiser discutir um ponto específico, estou à disposição!</p>
+     
+        <H2 class="fonte"> Causas do Desmatamento</H2>
+        <p>Agricultura expansão de cultivos, como soja e cana-de-açúcar.
+Pecuária criação de pastagens.
+Exploração de Recursos extração de madeira e minerais.
+Urbanização crescimento das cidades.
+Mudanças Climáticas eventos climáticos extremos.</p>
+
+        
+        <h2 class="fonte">Consequências do Desmatamento</h2>
+
+        <p>Perda de Biodiversidade extinção de espécies.
+            Mudanças Climáticas aumento de CO2 na atmosfera.
+            Erosão do Solo degradação da qualidade do solo.
+            Alteração dos Ciclos Hídricos impacto nas chuvas e fontes de água.</p> 
+            <video controls class="rounded-video">
+                <source src="Mata.mp4" type="video/mp4">Seu navegador não suporta o video.  
+            </video>
+
+            <h2 class="fonte">Impactos Sociais</h2>
+
+            <p>Ameaça a comunidades indígenas.
+                Conflitos por terras.</p>
+
+                <h2 class="fonte">Soluções</h2>
+            <p>Reflorestamento restaurar áreas desmatadas.
+                Agroflorestas sistemas sustentáveis que combinam agricultura e florestas.
+                Legislação políticas de proteção florestal.
+                Consumo Consciente escolha de produtos sustentáveis.</p>
+
+                <h3>O desmatamento é um desafio significativo com impactos ambientais e sociais, exigindo ações integradas para sua mitigação.</h3>
+
+        <button id="btn-ir-tela3">Ir para a tela de feedback</button>
+
+    </div>
+
+    <!-- Tela 3: Feedback -->
+    <div id="tela3" class="tela" style="display: none;">
+        <h3>Deixe seu Feedback</h3>
+        <button id="btn-curtir">Curtir 👍</button>
+        <p id="contador-curtidas">Curtidas: 0</p>
+        <form id="form-feedback">
+            <label for="nome">Seu nome:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome" required>
+            <label for="mensagem">Sua mensagem:</label>
+            <textarea id="mensagem" rows="4" cols="50" placeholder="Escreva sua mensagem" required></textarea>
+            <button type="submit">Enviar Feedback</button>
+        </form>
+        <div id="feedback-resultado"></div>
+    </div>
+
+
+</body>
+
+</html>
